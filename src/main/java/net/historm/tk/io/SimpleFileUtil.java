@@ -68,6 +68,8 @@ public class SimpleFileUtil {
 				}
 			}
 		}
-		return sb.toString();
+		String txt = sb.toString();
+		txt = txt.substring(0, txt.length() - 1);
+		return txt;
 	}
 }
